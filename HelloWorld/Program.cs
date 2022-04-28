@@ -9,8 +9,9 @@ namespace HelloWorld
         {
             Console.WriteLine("introduceti lungimea");
             int lungime = int.Parse(Console.ReadLine());
-            
 
+            Console.WriteLine("Overflow");
+            Console.WriteLine(int.MaxValue + lungime);
             
 
             int latime = 6;
@@ -18,7 +19,7 @@ namespace HelloWorld
             var noteExamen = new Dictionary<string, int>();
 
             int ariaDreptunghiului = lungime * latime;
-            var perimetru = lungime + latime + lungime + latime;
+            var perimetruDreptunghiului = lungime * 2 + latime * 2;
             
             Console.WriteLine(ariaDreptunghiului);
         }
