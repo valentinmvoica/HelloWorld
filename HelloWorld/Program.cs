@@ -10,18 +10,37 @@ namespace HelloWorld
             Console.WriteLine("introduceti lungimea");
             int lungime = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Overflow");
-            Console.WriteLine(int.MaxValue + lungime);
-            
+            Console.WriteLine("introduceti latimea");
+            int latime = int.Parse(Console.ReadLine());
 
-            int latime = 6;
+            var ariaDreptunghiului = lungime * latime;
 
-            var noteExamen = new Dictionary<string, int>();
+            if (ariaDreptunghiului > 100)
+            {
+                Console.WriteLine("mai mare decat 100");
+            }
+            else if (ariaDreptunghiului > 50)
+            {
+                Console.WriteLine("mai mare decat 50");
+            }
+            else if (ariaDreptunghiului > 30)
+            {
+                Console.WriteLine("mai mare decat 30");
+            }
+            else if (ariaDreptunghiului > 20)
+            {
+                Console.WriteLine("mai mare decat 30");
+            }
+            else
+            {
+                Console.WriteLine("e mic boss");
+            }
 
-            int ariaDreptunghiului = lungime * latime;
-            var perimetruDreptunghiului = lungime * 2 + latime * 2;
-            
-            Console.WriteLine(ariaDreptunghiului);
+
+            Console.WriteLine("al doilea if");
+
+
+            Console.ReadLine();
         }
     }
 }
