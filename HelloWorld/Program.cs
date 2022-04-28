@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace HelloWorld
 {
@@ -6,9 +7,20 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine("Hello World2!");
-            Console.WriteLine("Hello World3!");
+            Console.WriteLine("introduceti lungimea");
+            int lungime = int.Parse(Console.ReadLine());
+            
+
+            
+
+            int latime = 6;
+
+            var noteExamen = new Dictionary<string, int>();
+
+            int ariaDreptunghiului = lungime * latime;
+            var perimetru = lungime + latime + lungime + latime;
+            
+            Console.WriteLine(ariaDreptunghiului);
         }
     }
 }
